@@ -1,0 +1,50 @@
+.whiteBlock
+  background-color: white
+  padding: 0 0
+  @include flexCenter
+  @include maxTabletLandscape
+    display: block
+  &--slide
+    width: 100%
+    margin-left: auto
+    @include minTabletLandscape
+      width: 50%
+    img
+      display: block
+      width: 100%
+  &--text
+    padding: 30px
+    width: 100%
+    @include minTabletLandscape
+      padding: 20px
+      padding-top: 0
+      width: 40%
+    &-inf
+      width: 100%
+      margin: 0 0 0 auto
+      @include minTabletLandscape
+        max-width: 340px
+      h2, p, a
+        color: $blue-dark
+      h2
+        font-family: $typobody
+        text-align: center
+        text-transform: uppercase
+        font-weight: normal
+        line-height: 1.25
+        font-size: 34px
+        margin: 0 0 50px
+        @include flexCenter
+        position: relative
+        &::before,
+        &::after
+          content: "~"
+          font-weight: bold
+          margin: 0 5px
+      p
+        margin: 0
+        font-size: 18px
+        text-align: justify
+        margin-top: 20px
+      a.o-btn
+        margin-top: 50px

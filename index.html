@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Geronimo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/mainstyle.css" />
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="mainHeader">
+    <nav class="navbar navbar-expand-sm ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <source srcset="images/logo.png" media="(min-width: 768px)" />
+            <img src="images/logo.png" alt="logo" class="d-inline-block align-text-top" />
+          </picture>
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+
+
+          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5"
+              d="M3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355Z"
+              fill="#1C274C" />
+            <path
+              d="M8 13C8.55228 13 9 12.5523 9 12C9 11.4477 8.55228 11 8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13Z"
+              fill="#1C274C" />
+            <path
+              d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+              fill="#1C274C" />
+            <path
+              d="M16 13C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11C15.4477 11 15 11.4477 15 12C15 12.5523 15.4477 13 16 13Z"
+              fill="#1C274C" />
+          </svg>
+
+        </button>
+        <div class="collapse navbar-collapse mainHeader--nav" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gerónimo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
+
+  <!-- main content -->
+  <main>
+
+    <!-- mainBanner -->
+    <div class="mainBanner">
+      <div class="mainBanner--img">
+        <img src="images/bannerimg.jpg" alt="La pasteleria de Geronimo" />
+      </div>
+      <div class="mainBanner--meta">
+        <h1>La pasteleria de Geronimo, un pastelito del cielo.</h1>
+        <picture>
+          <img src="images/logobanner.png" alt="La pasteleria de Geronimo, un pastelito del cielo" class="img-fluid" />
+        </picture>
+      </div>
+    </div>
+    <!-- mainBanner -->
+
+    <!-- pink cta -->
+    <div class="cta pinkLine">
+      <div class="theline">
+        <img src="images/logocinta.png" alt="La pasteleria de Geronimo, un pastelito del cielo">
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const contenedor = document.querySelector('.pinkLine .theline');
+        const textoOriginal = document.querySelector('.pinkLine img');
+        const textalt = 'La pastelería de Gerónimo, un pastelito del cielo';
+
+        // Duplica las imágenes dentro del contenedor
+        for (let index = 0; index < 5; index++) {
+          contenedor.innerHTML += `<img src="${textoOriginal.src}" alt="${textalt}" />`;
+        }
+
+        // Selecciona todas las imágenes dentro del contenedor
+        const textos = document.querySelectorAll('.pinkLine img');
+
+        // Escucha el evento de scroll
+        window.addEventListener('scroll', function () {
+          const scrollPos = window.scrollY; // Posición del scroll vertical
+
+          // Aplica la transformación a todas las imágenes con un delay
+          contenedor.style.transform = `translateX( ${scrollPos * -1}px)`;
+
+        });
+      });
+    </script>
+    <!-- pink cta -->
+
+
+
+    <!-- white block -->
+    <div class="whiteBlock">
+      <div class="whiteBlock--text">
+        <div class="whiteBlock--text-inf">
+          <h2>Un pastelito <br> del cielo</h2>
+          <p>En La <strong>Pastelería de Gerónimo</strong>, creemos que cada bocado cuenta una historia y que el
+            verdadero arte se
+            encuentra en los detalles.</p>
+          <p>Fundada por Gerónimo García, un apasionado de la repostería con un amor inquebrantable por crear
+            experiencias inolvidables.</p>
+          <a href="#!" class="text-uppercase o-btn dark-solid">Ver más</a>
+        </div>
+      </div>
+      <div class="whiteBlock--slide">
+        <img src="images/pastel1.jpg" alt="">
+      </div>
+    </div>
+    <!-- white block -->
+
+
+    <!-- Productos -->
+    <div class="ourProducts">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+
+
+        <div class="row">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/mostachon.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/coco.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/chocolate.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/napolitano.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/chocolatefresa.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="ourProducts--prod">
+              <div class="ourProducts--img text-center">
+                <img src="images/mapple.png" alt="Producto" class="img-responsive">
+              </div>
+              <div class="ourProducts--inf">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"></div> -->
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- Productos -->
+
+    <!-- acerca de -->
+    <div class="aboutus">
+
+      <div class="container">
+        <img src="images/sello.png" alt="Sello" class="sello">
+      </div>
+
+      <div class="aboutus--sides">
+
+        <div class="aboutus--slide">
+          <img src="images/geronimo.jpg" alt="">
+        </div>
+        <div class="aboutus--text">
+          <div class="aboutus--inf">
+            <img src="images/name.png" alt="Geronimo">
+            <p>Desde 2009, <strong>Gerónimo</strong> ha sido el anfitrión del programa "En la cocina con Gerónimo" de
+              Televisa, donde
+              diariamente inspira a miles de televidentes con ideas muy prácticas y sencillas para cocinar salud en
+              casa.
+            </p>
+            <p>Su misión es clara: ayudar a las personas a tomar conciencia de los nutrientes que cada receta aporta,
+              promoviendo una vida llena de calidad y bienestar.</p>
+            <p>En <strong>La Pastelería de Gerónimo</strong>, cada creación no solo es un postre, sino una expresión de
+              su compromiso por
+              nutrir cuerpo y alma, demostrando que con voluntad y la guía divina, todo es posible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- acerca de -->
+
+
+    <!-- video -->
+    <div class="videosection">
+      <!-- Modal trigger button -->
+      <img src="images/videobanner.jpg" alt="Video" style="width: 100%;" data-bs-toggle="modal"
+        data-bs-target="#modalId">
+
+
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitleId">
+                &nbsp;
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Cerrar
+              </button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional: Place to the bottom of scripts -->
+      <script>
+        const myModal = new bootstrap.Modal(
+          document.getElementById("modalId"),
+          options,
+        );
+      </script>
+
+    </div>
+    <!-- video -->
+
+
+
+    <div class="contactBlock">
+
+      <h2 class="text-center">Contacto</h2>
+
+      <div class="contactBlock--locations">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="contactBlock--location">
+                <h3>Sucursal Plaza Vía la Luz</h3>
+                <p>
+                  Av. La Luz 102, <br>
+                  Villas La Rioja.
+                </p>
+                <br>
+                <p>
+                  Horario:
+                  <br>
+                  10:00 am a 09:30 pm
+                </p>
+                <br><br>
+                <div class="conico">
+                  <a href="tel:81 1086 7755 ">81 1086 7755 </a>
+                </div>
+                <div class="conico">
+                  <a href="mailto:mariopasteleria01@gmail.com">mariopasteleria01@gmail.com</a>
+                </div>
+                <div class="map">
+                  <img src="https://placehold.co/380x210" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="contactBlock--location">
+                <h3>Sucursal Plaza Vía la Luz</h3>
+                <p>
+                  Av. La Luz 102, <br>
+                  Villas La Rioja.
+                </p>
+                <br>
+                <p>
+                  Horario:
+                  <br>
+                  10:00 am a 09:30 pm
+                </p>
+                <br><br>
+                <div class="conico">
+                  <a href="tel:81 1086 7755 ">81 1086 7755 </a>
+                </div>
+                <div class="conico">
+                  <a href="mailto:mariopasteleria01@gmail.com">mariopasteleria01@gmail.com</a>
+                </div>
+                <div class="map">
+                  <img src="https://placehold.co/380x210" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </main>
+  <!-- main content -->
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

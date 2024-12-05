@@ -1,0 +1,29 @@
+// .mainHeader
+.mainHeader
+  border-bottom: 1px solid  #ccc
+
+
+  .navbar-brand
+    height: 105px
+    picture, img
+      height: 100%
+    @include maxMobile
+      height: 80px
+    @include maxMobilePortrait
+      height: 60px
+
+  &--nav
+    @include minTabletLandscape
+      position: absolute
+      width: 100%
+      left: 0
+  .navbar-nav
+    @include minTabletLandscape
+      gap: 0 30px
+      margin: 0 auto
+    //.nav-item
+    .nav-link
+      color: $blue-dark
+      text-transform: uppercase
+      font-weight: 500
+      font-size: 17px

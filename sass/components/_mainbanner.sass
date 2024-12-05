@@ -1,0 +1,41 @@
+.mainBanner
+  position: relative
+  display: flex
+  overflow: hidden
+  height: 50vh
+  @include minPhablet
+    height: 80vh
+  &--img
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1
+    @include flexCenter
+    overflow: hidden
+    img
+      @include minDesktop1280
+        width: auto
+        height: auto
+        min-width: 100%
+        min-height: 100%
+      @include maxDesktop1280
+        height: 100%
+  &--meta
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 2
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: column
+    padding: 0 10px
+    h1
+      font-size: 10px
+      color: transparent
+      &::selection
+        background-color: transparent
+
+  
