@@ -14,18 +14,13 @@
       margin-left: auto
       margin-right: auto
   &--inf
-    padding: 30px 0 
+    padding: 30px 0
     @include minTabletPortrait
       padding-bottom: 60px
     p
       color: $blue-dark
       font-size: 20px
       margin: 0
-
-
-
-
-
 
 // pasara otra hoja
 .aboutus
@@ -34,7 +29,7 @@
 
   .container
     position: relative
-  
+
   img.sello
     position: absolute
     right: 100px
@@ -44,7 +39,7 @@
   &--sides
     display: flex
     align-items: center
-  
+
   &--slide
     width: 50%
     img
@@ -64,9 +59,6 @@
       color: $blue-dark
       // margin: 0
 
-
-
-
 .contactBlock
   background-color: #577e97
   padding: 60px 0
@@ -80,25 +72,87 @@
     color: white
 
   h3
-    font-size: 33px
+    font-size: 38px
     font-weight: 300
+    margin: 0
 
   p
     font-size: 23px
+    line-height: 1.3
 
   a
     font-size: 19px
-
-  .map
-    display: block
-    margin-top: 50px
-    img
-      max-width: 100%
 
   &--location
     width: 100%
     max-width: 420px
     margin: 0 auto
+  &--address
+    margin: 30px 0 40px
+    min-height: 90px
+  &--time
+    margin: 0 0 35px
+  &--link
+    @include flexCenter
+    justify-content: flex-start
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    .ico
+      display: block
+      margin-right: 10px
+  &--map
+    display: block
+    margin-top: 50px
+    img
+      max-width: 100%
 
-
-
+.contactForm
+  padding: 60px 0
+  @include maxMobile
+    padding: 30px 0
+  h2
+    color: $blue-dark
+    font-family: $typotitles
+    font-size: 70px
+    margin-bottom: 60px
+    @include maxMobile
+      text-align: center
+      margin-bottom: 20px
+  &--formulario
+    // background-color: #e4eef4
+    padding: 20px
+    border-radius: 8px
+    // max-width: 600px
+    margin: 0 auto
+    .form-row
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+      margin-bottom: 15px
+    input,
+    textarea
+      flex: 1
+      padding: 10px
+      border: 1px solid #b0c4ce
+      border-radius: 5px
+      background-color: #b0c4ce
+      color: #000
+      font-size: 14px
+      &::placeholder
+        color: #ffffff
+        font-weight: 300
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]
+      flex: 1 1 calc(33.333% - 10px)
+    textarea
+      flex: 1 1 100% // Una fila completa
+      min-height: 150px
+      resize: none
+    button
+      color: $blue-dark
+      margin: 0 0 0 auto
+      @include maxMobile
+        width: 100%!important
+        max-width: 100%!important

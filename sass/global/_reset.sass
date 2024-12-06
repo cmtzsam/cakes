@@ -124,6 +124,7 @@ a
   text-align: center
   font-weight: normal
   transition: all .1s linear
+  line-height: 1
   &.dark-solid
     background-color: #ace2dd
     // color: $blanco
@@ -227,7 +228,11 @@ strong
   font-family: inherit
   font-weight: 600
 
-
+// container reset
+.container
+  @include minTabletLandscape
+    width: 100%
+    max-width: $tablet-landscape
 
 .hide
   display: none!important

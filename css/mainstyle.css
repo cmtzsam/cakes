@@ -1,3 +1,12 @@
+/* taviraj-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Taviraj";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/taviraj-v13-latin-300.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/taviraj-v13-latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/taviraj-v13-latin-300.woff2") format("woff2"), url("./fonts/taviraj-v13-latin-300.woff") format("woff"), url("./fonts/taviraj-v13-latin-300.ttf") format("truetype"), url("./fonts/taviraj-v13-latin-300.svg#Taviraj") format("svg"); /* Legacy iOS */
+}
 /* taviraj-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -210,6 +219,7 @@ a span {
   text-align: center;
   font-weight: normal;
   transition: all 0.1s linear;
+  line-height: 1;
 }
 .o-btn.dark-solid {
   background-color: #ace2dd;
@@ -330,6 +340,13 @@ strong {
   font-weight: 600;
 }
 
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+
 .hide {
   display: none !important;
 }
@@ -371,6 +388,94 @@ strong {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 17px;
+}
+
+.footerBlock {
+  color: #446f85;
+  padding-top: 25px;
+}
+.footerBlock .footerBlock--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footerBlock .footerBlock--container .footerBlock--menu,
+.footerBlock .footerBlock--container .footerBlock--social,
+.footerBlock .footerBlock--container .footerBlock--brand {
+  flex: 1;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul,
+.footerBlock .footerBlock--container .footerBlock--social ul,
+.footerBlock .footerBlock--container .footerBlock--brand ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul li a,
+.footerBlock .footerBlock--container .footerBlock--social ul li a,
+.footerBlock .footerBlock--container .footerBlock--brand ul li a {
+  text-decoration: none;
+  color: #446f85;
+}
+.footerBlock .footerBlock--container .footerBlock--social ul li {
+  margin-bottom: 5px;
+}
+.footerBlock .footerBlock--container .footerBlock--social ul li:last-child {
+  margin-bottom: 0;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul li {
+  margin-bottom: 10px;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul li:last-child {
+  margin-bottom: 0;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul li a {
+  text-transform: uppercase;
+}
+.footerBlock .footerBlock--container .footerBlock--menu ul li a.icon-link {
+  line-height: 1;
+}
+.footerBlock .footerBlock--container .footerBlock--brand img {
+  max-width: 195px;
+  margin: 0 auto;
+  display: block;
+}
+.footerBlock .footerBlock--container .footerBlock--brand p {
+  margin-top: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+.footerBlock .footerBlock--copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #446f85;
+  border-top: 1px solid #a4b5c1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+.footerBlock .footerBlock--copyright p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footerBlock .footerBlock--copyright p span {
+  display: block;
+  padding: 0 20px;
+  margin: 0 20px;
+  position: relative;
+}
+.footerBlock .footerBlock--copyright p span::before, .footerBlock .footerBlock--copyright p span::after {
+  content: " - ";
+  position: absolute;
+}
+.footerBlock .footerBlock--copyright p span::before {
+  left: 0;
+}
+.footerBlock .footerBlock--copyright p span::after {
+  right: 0;
 }
 
 .mainBanner {
@@ -621,26 +726,116 @@ strong {
   color: white;
 }
 .contactBlock h3 {
-  font-size: 33px;
+  font-size: 38px;
   font-weight: 300;
+  margin: 0;
 }
 .contactBlock p {
   font-size: 23px;
+  line-height: 1.3;
 }
 .contactBlock a {
   font-size: 19px;
-}
-.contactBlock .map {
-  display: block;
-  margin-top: 50px;
-}
-.contactBlock .map img {
-  max-width: 100%;
 }
 .contactBlock--location {
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
+}
+.contactBlock--address {
+  margin: 30px 0 40px;
+  min-height: 90px;
+}
+.contactBlock--time {
+  margin: 0 0 35px;
+}
+.contactBlock--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.contactBlock--link:last-child {
+  margin-bottom: 0;
+}
+.contactBlock--link .ico {
+  display: block;
+  margin-right: 10px;
+}
+.contactBlock--map {
+  display: block;
+  margin-top: 50px;
+}
+.contactBlock--map img {
+  max-width: 100%;
+}
+
+.contactForm {
+  padding: 60px 0;
+}
+@media (max-width: 568px) {
+  .contactForm {
+    padding: 30px 0;
+  }
+}
+.contactForm h2 {
+  color: #446f85;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 70px;
+  margin-bottom: 60px;
+}
+@media (max-width: 568px) {
+  .contactForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.contactForm--formulario {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.contactForm--formulario .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.contactForm--formulario input,
+.contactForm--formulario textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #b0c4ce;
+  border-radius: 5px;
+  background-color: #b0c4ce;
+  color: #000;
+  font-size: 14px;
+}
+.contactForm--formulario input::placeholder,
+.contactForm--formulario textarea::placeholder {
+  color: #ffffff;
+  font-weight: 300;
+}
+.contactForm--formulario input[type=text],
+.contactForm--formulario input[type=email],
+.contactForm--formulario input[type=tel] {
+  flex: 1 1 calc(33.333% - 10px);
+}
+.contactForm--formulario textarea {
+  flex: 1 1 100%;
+  min-height: 150px;
+  resize: none;
+}
+.contactForm--formulario button {
+  color: #446f85;
+  margin: 0 0 0 auto;
+}
+@media (max-width: 568px) {
+  .contactForm--formulario button {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=mainstyle.css.map */
